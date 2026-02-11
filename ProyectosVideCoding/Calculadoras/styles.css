@@ -1,0 +1,174 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 500px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+        }
+        
+        .header p {
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+        
+        .calculator {
+            padding: 25px;
+        }
+        
+        .display {
+            background-color: #1a1a2e;
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: right;
+            overflow: hidden;
+            min-height: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .previous-operand {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.7);
+            min-height: 27px;
+            word-break: break-all;
+        }
+        
+        .current-operand {
+            font-size: 2.5rem;
+            font-weight: 600;
+            word-break: break-all;
+            min-height: 60px;
+        }
+        
+        .buttons-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 15px;
+        }
+        
+        button {
+            border: none;
+            border-radius: 10px;
+            padding: 20px 0;
+            font-size: 1.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .number-btn {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        
+        .number-btn:hover {
+            background-color: #e9ecef;
+        }
+        
+        .operator-btn {
+            background-color: #3498db;
+            color: white;
+        }
+        
+        .operator-btn:hover {
+            background-color: #2980b9;
+        }
+        
+        .equals-btn {
+            background-color: #2ecc71;
+            color: white;
+        }
+        
+        .equals-btn:hover {
+            background-color: #27ae60;
+        }
+        
+        .clear-btn {
+            background-color: #e74c3c;
+            color: white;
+        }
+        
+        .clear-btn:hover {
+            background-color: #c0392b;
+        }
+        
+        .delete-btn {
+            background-color: #f39c12;
+            color: white;
+        }
+        
+        .delete-btn:hover {
+            background-color: #d68910;
+        }
+        
+        .span-two {
+            grid-column: span 2;
+        }
+        
+        @media (max-width: 500px) {
+            .container {
+                border-radius: 15px;
+            }
+            
+            .display {
+                padding: 15px;
+                min-height: 100px;
+            }
+            
+            .current-operand {
+                font-size: 2rem;
+            }
+            
+            button {
+                padding: 15px 0;
+                font-size: 1.3rem;
+            }
+            
+            .buttons-grid {
+                grid-gap: 10px;
+            }
+        }
+    
