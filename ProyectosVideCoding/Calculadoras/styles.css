@@ -148,6 +148,53 @@
             grid-column: span 2;
         }
         
+        .history-section {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 25px;
+            border-left: 5px solid #3498db;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        .history-section h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.2rem;
+        }
+
+        .history-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .history-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #dee2e6;
+            font-size: 1rem;
+            color: #495057;
+        }
+
+        .history-item:last-child {
+            border-bottom: none;
+        }
+
+        .history-expression {
+            font-weight: 500;
+        }
+
+        .history-result {
+            font-weight: 700;
+            color: #2c3e50;
+        }
+
         @media (max-width: 500px) {
             .container {
                 border-radius: 15px;
