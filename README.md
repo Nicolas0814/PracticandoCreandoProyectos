@@ -1,4 +1,4 @@
-Practicando Mientras voy Creando Proyectos
+# Practicando Mientras voy Creando Proyectos
 
 Es un proyecto experimental para practicar haciendo varios proyectos pequeños que permita fortalecer, aprender y crear proyectos para mejorar diferentes habilidades de programación.
 
